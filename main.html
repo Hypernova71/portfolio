@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Eldar</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main_home.css">
+    <link rel="stylesheet" href="main_skils.css">
+</head>
+
+<body>
+    <header>
+        <div class="header--logo">
+            <img src="./images/logo-e.svg" alt="not found" class="header--logo-img">
+            <p class="header--logo-txt">
+                Eldar
+            </p>
+        </div>
+
+        <div class="header--box">
+            <ul class="header--nav">
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="about">About Me</span></a></li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" href="#home" data-key="skills">Skills</span>
+                    </a></li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="projects">Projects</span></a></li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="contacts">Contacts</span></a></li>
+            </ul>
+            <div class="header--box-lang">
+                <button class="language-btn">EN <span class="language-arrow">▾</span></button>
+                <ul class="language-list">
+                    <li data-lang="RU">RU</li>
+                    <li data-lang="KZ">KZ</li>
+                    <li data-lang="EN">EN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="home">
+            <div class="home--main">
+                <div class="home--main-info">
+                    <h1 class="home--main-info-title" data-key="title">Eldar - aspiring Front-End Developer with a
+                        passion for
+                        clean UI</h1>
+                    <p class="home--main-info-text" data-key="text">I am a frontend developer. I create responsive and
+                        intuitive websites using modern front-end technologies.</p>
+                </div>
+                <div class="home--main-img">
+                    <img src="./images/man.png" alt="not found" class="home--img-pic">
+                    <div class="home--main-img-info">
+                        <div class="home--main-img-info-square"></div>
+                        <p class="home--main-img-info-txt" data-key="img_text">Currently working on Portfolio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home--quote">
+                <div class="home--quote-txt" data-key="quote">"What you do today can improve all your tomorrows"</div>
+                <div class="home--quote-author" data-key="author">- Ralph Marston</div>
+            </div>
+
+            <div class="container-a">
+                <div class="container-a-line"></div>
+                <img src="./images/ball.svg" alt=" not found" class="container-a-img">
+                <img src="./images/figma.svg" alt=" not found" class="container-a-img">
+                <img src="./images/git.svg" alt=" not found" class="container-a-img">
+            </div>
+            <div class="container-b">
+                <img src="./images/square.png" alt=" not found" class="container-b-img">
+            </div>
+            <div class="container-c">
+                <img src="./images/squareBig.png" alt=" not found" class="container-c-img">
+            </div>
+        </section>
+
+
+        <section class="skills">
+            <div class="skills--container">
+
+                <h2 class="skills--container-title">#<span class="skills--container-title-txt" data-key="skills_title">My Skills</span></h2>
+                <div class="skills--container-line"></div>
+
+            </div>
+
+            <div class="skills--box">
+
+                <img src="./images/skills-img.png" alt="not found" class="skills--box-img">
+
+                <div class="skills--grid">
+
+                    <div class="skills--grid-item">
+                        <div class="skills--grid-item-title" data-key="skill_lang" >Languages & Core</div>
+                        <div class="skills--grid-item-txt" data-key="skill_lang_txt">HTML5, CSS3, JavaScript, jQuery, SCSS, Работа с DOM, LocalStorage</div>
+                    </div>
+                    <div class="skills--grid-item">
+                        <div class="skills--grid-item-title" data-key="skill_fr">Front-End Development</div>
+                        <div class="skills--grid-item-txt" data-key="skill_fr_txt">React, Vue, Fetch API / Axios, Адаптивная верстка, Flexbox / Grid</div>
+                    </div>
+                    <div class="skills--grid-item">
+                        <div class="skills--grid-item-title" data-key="skill_tools">Tools & Workflow</div>
+                        <div class="skills--grid-item-txt" data-key="skill_tools_txt">Git, NPM, Vite, VS Code, Работа с макетами (Figma)</div>
+                    </div>
+                    <div class="skills--grid-item">
+                        <div class="skills--grid-item-title" data-key="skill_addit">Additional Skills</div>
+                        <div class="skills--grid-item-txt" data-key="skill_addit_txt">UI Layout, Оптимизация, Работа с компонентами, Разбор чужого кода</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
