@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Eldar</title>
+    <link rel="icon" href="images/logo-eldar2.svg" type="image/x-icon">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main_home.css">
     <link rel="stylesheet" href="main_skils.css">
@@ -13,7 +14,7 @@
 <body>
     <header>
         <div class="header--logo">
-            <img src="./images/logo-e.svg" alt="not found" class="header--logo-img">
+            <img src="./images/logo-eldar.svg" alt="not found" class="header--logo-img">
             <p class="header--logo-txt">
                 Eldar
             </p>
@@ -21,14 +22,18 @@
 
         <div class="header--box">
             <ul class="header--nav">
-                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="about">About Me</span></a></li>
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="about">About Me</span></a>
+                </li>
 
-                <li> <a href="#home" class="hash">#<span class="header--nav-list" href="#home" data-key="skills">Skills</span>
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" href="#home"
+                            data-key="skills">Skills</span>
                     </a></li>
 
-                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="projects">Projects</span></a></li>
+                <li> <a href="#home" class="hash">#<span class="header--nav-list"
+                            data-key="projects">Projects</span></a></li>
 
-                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="contacts">Contacts</span></a></li>
+                <li> <a href="#home" class="hash">#<span class="header--nav-list"
+                            data-key="contacts">Contacts</span></a></li>
             </ul>
             <div class="header--box-lang">
                 <button class="language-btn">EN <span class="language-arrow">▾</span></button>
@@ -39,6 +44,35 @@
                 </ul>
             </div>
         </div>
+
+        <button class="burger-btn"><img src="./images/burger.svg" alt=""></button>
+
+        <div class="header--boxMobile">
+            <ul class="header--nav">
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" data-key="about">About Me</span></a>
+                </li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list" href="#home"
+                            data-key="skills">Skills</span>
+                    </a></li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list"
+                            data-key="projects">Projects</span></a></li>
+
+                <li> <a href="#home" class="hash">#<span class="header--nav-list"
+                            data-key="contacts">Contacts</span></a></li>
+            </ul>
+            <div class="header--box-lang">
+                <button class="language-btn">EN <span class="language-arrow">▾</span></button>
+                <ul class="language-list">
+                    <li data-lang="RU">RU</li>
+                    <li data-lang="KZ">KZ</li>
+                    <li data-lang="EN">EN</li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
     </header>
 
 
@@ -47,7 +81,8 @@
         <section class="home">
             <div class="home--main">
                 <div class="home--main-info">
-                    <h1 class="home--main-info-title" data-key="title">Eldar - aspiring Front-End Developer with a great potential</h1>
+                    <h1 class="home--main-info-title" data-key="title">Eldar - aspiring Front-End Developer with a great
+                        potential</h1>
                     <p class="home--main-info-text" data-key="text">I am a frontend developer. I create responsive and
                         intuitive websites using modern front-end technologies.</p>
                 </div>
@@ -76,13 +111,20 @@
             <div class="container-c">
                 <img src="./images/squareBig.png" alt=" not found" class="container-c-img">
             </div>
+            <div class="container-d">
+                <img src="./images/quotes.svg" alt="">
+            </div>
+            <div class="container-e">
+                <img src="./images/quotes.svg" alt="">
+            </div>
         </section>
 
 
         <section class="skills">
             <div class="skills--container">
 
-                <h2 class="skills--container-title">#<span class="skills--container-title-txt" data-key="skills_title">My Skills</span></h2>
+                <h2 class="skills--container-title">#<span class="skills--container-title-txt"
+                        data-key="skills_title">My Skills</span></h2>
                 <div class="skills--container-line"></div>
 
             </div>
@@ -94,20 +136,24 @@
                 <div class="skills--grid">
 
                     <div class="skills--grid-item">
-                        <div class="skills--grid-item-title" data-key="skill_lang" >Languages & Core</div>
-                        <div class="skills--grid-item-txt" data-key="skill_lang_txt">HTML5, CSS3, JavaScript, jQuery, SCSS, Работа с DOM, LocalStorage</div>
+                        <div class="skills--grid-item-title" data-key="skill_lang">Languages & Core</div>
+                        <div class="skills--grid-item-txt" data-key="skill_lang_txt">HTML5, CSS3, JavaScript, jQuery,
+                            SCSS, Работа с DOM, LocalStorage</div>
                     </div>
                     <div class="skills--grid-item">
                         <div class="skills--grid-item-title" data-key="skill_fr">Front-End Development</div>
-                        <div class="skills--grid-item-txt" data-key="skill_fr_txt">React, Vue, Fetch API / Axios, Адаптивная верстка, Flexbox / Grid</div>
+                        <div class="skills--grid-item-txt" data-key="skill_fr_txt">React, Vue, Fetch API / Axios,
+                            Адаптивная верстка, Flexbox / Grid</div>
                     </div>
                     <div class="skills--grid-item">
                         <div class="skills--grid-item-title" data-key="skill_tools">Tools & Workflow</div>
-                        <div class="skills--grid-item-txt" data-key="skill_tools_txt">Git, NPM, Vite, VS Code, Работа с макетами (Figma)</div>
+                        <div class="skills--grid-item-txt" data-key="skill_tools_txt">Git, NPM, Vite, VS Code, Работа с
+                            макетами (Figma)</div>
                     </div>
                     <div class="skills--grid-item">
                         <div class="skills--grid-item-title" data-key="skill_addit">Additional Skills</div>
-                        <div class="skills--grid-item-txt" data-key="skill_addit_txt">UI Layout, Оптимизация, Работа с компонентами, Разбор чужого кода</div>
+                        <div class="skills--grid-item-txt" data-key="skill_addit_txt">UI Layout, Оптимизация, Работа с
+                            компонентами, Разбор чужого кода</div>
                     </div>
 
                 </div>

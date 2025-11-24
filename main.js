@@ -84,3 +84,10 @@ list.addEventListener('click', (e) => {
   }
 
 });
+
+const mobileBtn = document.querySelector('.burger-btn');
+const mobileMenu = document.querySelector('.header--boxMobile');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
