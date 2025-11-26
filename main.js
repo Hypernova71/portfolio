@@ -68,7 +68,7 @@ const langLists = document.querySelectorAll('.language-list');
 const navItems = document.querySelectorAll('[data-key]');
 
 langButtons.forEach((btn, index) => {
-  const list = langLists[index]; 
+  const list = langLists[index];
 
   btn.addEventListener('click', () => {
     list.style.display = list.style.display === 'block' ? 'none' : 'block';
@@ -106,3 +106,28 @@ mobileBtn.addEventListener('click', () => {
 
 });
 
+
+const navLinks = document.querySelectorAll('.hash');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const span = link.querySelector('[data-key]');
+    if (!span) return; 
+
+    const key = span.dataset.key;
+    const section = document.querySelector(`.${key}`);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const mobileMenu = document.querySelector('.header--boxMobile');
+    const mobileBtn = document.querySelector('.burger-btn');
+    if (mobileMenu.classList.contains('active')) {
+      mobileMenu.classList.remove('active');
+      mobileBtn.classList.remove('active');
+    }
+    document.body.style.overflow = 'auto';
+  });
+});

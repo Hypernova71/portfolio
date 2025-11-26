@@ -169,12 +169,14 @@ body {
     }
 
     header {
-        padding: 16px 0px 8px;
+        padding: 8px 0px 8px;
         max-width: 768px;
-        height: 48px;
+        height: 40px;
+        
     }
 
     .header--logo {
+        padding-left: 10px;
         width: auto;
         height: 16px;
         display: flex;
@@ -201,6 +203,7 @@ body {
         background: var(--back-color);
         width: 24px;
         height: 24px;
+        margin-right: 10px;
     }
 
     .icon-burger{
@@ -226,16 +229,13 @@ body {
     .header--boxMobile {
         display: none;
         top: 48px;
-        /* Выравнивание под шапкой */
         left: 0;
         width: 100vw;
         height: 100vh;
         background-color: var(--back-color);
         position: fixed;
-        /* Теперь используем flex для вертикального расположения */
         flex-direction: column;
         padding-top: 24px;
-        /* Добавляем отступ сверху */
     }
 
     .header--boxMobile.active {
