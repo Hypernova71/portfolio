@@ -4,18 +4,6 @@ main {
     margin: auto;
 }
 
-.container-d {
-    position: absolute;
-    top:  583px;
-    left: 620px;
-}
-
-.container-e{
-    position: absolute;
-    top: 673px;
-    left:1258px;  
-    transform: rotate(180deg);
-}
 
 .container-a-line {
     width: 1px;
@@ -97,14 +85,27 @@ main {
     width: 712px;
     height: 158px;
     margin: 112px auto;
+    position: relative;
 }
 
+.container-d {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.container-e{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    transform: rotate(180deg);
+}
 .home--quote-txt {
     border: 1px solid var(--alt-color);
     padding: 32px;
     width: 712px;
     height: 95px;
-
+    
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 17px;

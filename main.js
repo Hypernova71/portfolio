@@ -63,31 +63,46 @@ const translations = {
 };
 
 
-const btn = document.querySelector('.language-btn');
-const list = document.querySelector('.language-list');
+const langButtons = document.querySelectorAll('.language-btn');
+const langLists = document.querySelectorAll('.language-list');
 const navItems = document.querySelectorAll('[data-key]');
 
-btn.addEventListener('click', () => {
-  list.style.display = list.style.display === 'block' ? 'none' : 'block';
+langButtons.forEach((btn, index) => {
+  const list = langLists[index]; 
+
+  btn.addEventListener('click', () => {
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+  });
+
+  list.addEventListener('click', (e) => {
+    if (e.target && e.target.nodeName === "LI") {
+      const selectedLang = e.target.dataset.lang;
+
+      btn.innerHTML = `${selectedLang} <span class="language-arrow">▾</span>`;
+      list.style.display = 'none';
+
+      navItems.forEach(item => {
+        const key = item.dataset.key;
+        item.textContent = translations[selectedLang][key];
+      });
+    }
+  });
 });
 
-list.addEventListener('click', (e) => {
-  if (e.target && e.target.nodeName === "LI") {
-    const selectedLang = e.target.dataset.lang;
-    btn.textContent = selectedLang + '▼';
-    list.style.display = 'none';
 
-    navItems.forEach(item => {
-      const key = item.dataset.key;
-      item.textContent = translations[selectedLang][key];
-    });
-  }
-
-});
 
 const mobileBtn = document.querySelector('.burger-btn');
 const mobileMenu = document.querySelector('.header--boxMobile');
 
 mobileBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
+  mobileBtn.classList.toggle('active');
+
+  if (mobileMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+
 });
+
