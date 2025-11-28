@@ -18,6 +18,9 @@ const translations = {
     skill_tools_txt: "Git, NPM, Vite, VS Code, Working with designs (Figma)",
     skill_addit: "Additional Skills",
     skill_addit_txt: "UI Layout, Optimization, Component Handling, Reading Others' Code",
+    about_title: "About Me",
+    about_subtitle: "Hello, I’m Eldar!",
+    about_text: "I’m a beginner front-end developer from Astana, Kazakhstan. I love creating clean, modern and interactive websites — and I’m constantly learning to make each project better than the last. I work with HTML, CSS, JavaScript, React, Vue, Vite and many other tools that help me turn ideas into fast and responsive web experiences. Discovering new technologies inspires me, and I enjoy improving my skills every day. I’m still at the beginning of my journey, but I’m passionate, motivated and ready to grow into a strong, modern front-end developer."
 
   },
   RU: {
@@ -39,6 +42,9 @@ const translations = {
     skill_tools_txt: "Git, NPM, Vite, VS Code, Работа с макетами (Figma)",
     skill_addit: "Дополнительные навыки",
     skill_addit_txt: "UI Layout, Оптимизация, Работа с компонентами, Разбор чужого кода",
+    about_title: "Обо мне",
+    about_subtitle: "Привет, я Эльдар!",
+    about_text: "Я начинающий фронтенд-разработчик из Астаны, Казахстан. Я люблю создавать чистые, современные и интерактивные веб-сайты — и постоянно учусь, чтобы делать каждый проект лучше предыдущего. Я работаю с HTML, CSS, JavaScript, React, Vue, Vite и многими другими инструментами, которые помогают мне превращать идеи в быстрые и адаптивные веб-решения. Открытие новых технологий вдохновляет меня, и я с удовольствием совершенствую свои навыки каждый день. Я все еще в начале своего пути, но я полон страсти, мотивации и готов расти в сильного, современного фронтенд-разработчика."
   },
   KZ: {
     about: "Мен туралы",
@@ -59,6 +65,9 @@ const translations = {
     skill_tools_txt: "Git, NPM, Vite, VS Code, Дизайндармен жұмыс (Figma)",
     skill_addit: "Қосымша дағдылар",
     skill_addit_txt: "UI Layout, Оптимизация, Компоненттермен жұмыс, Басқалардың кодын оқу",
+    about_title: "Мен туралы",
+    about_subtitle: "Сәлем, мен Эльдармын!",
+    about_text: "Мен Қазақстанның Астанасынан шыққан бастаушы фронтенд әзірлеушісімін. Мен таза, заманауи және интерактивті веб-сайттарды жасағанды ​​ұнатамын - және әр жобаны алдыңғыдан жақсы ету үшін үнемі үйреніп жүрмін. Мен HTML, CSS, JavaScript, React, Vue, Vite және идеяларды жылдам және жауап беретін веб-тәжірибелерге айналдыруға көмектесетін көптеген басқа құралдармен жұмыс істеймін. Жаңа технологияларды ашу мені шабыттандырады, және мен күн сайын өз дағдыларымды жетілдіруді ұнатамын. Мен әлі де өз жолымның басындамын, бірақ мен құштармын, ынталымын және мықты, заманауи фронтенд әзірлеушісіне айналуға дайынмын."
   }
 };
 
