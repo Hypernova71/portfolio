@@ -16,10 +16,9 @@ img {
 
 :root {
     --main-color: white;
-    --back-color-dark: rgb(40, 44, 51, 1);
     --alt-color: rgba(171, 178, 191, 1);
     --sec-color: rgba(199, 120, 221, 1);
-    --back-color: rgb(rgba(40, 44, 51, 1));
+    --back-color: rgba(40, 44, 51, 1);
     --main-font: 'Fira Code', monospace;
 }
 
@@ -100,7 +99,7 @@ header {
 }
 
 body {
-    background-color: var(--back-color-dark)
+    background-color: var(--back-color)
 }
 
 .language-btn {
