@@ -297,9 +297,7 @@ body {
         color: var(--main-color);
     }
 
-    body {
-        background-color: var(--back-color)
-    }
+   
 
     .language-btn {
         background: var(--back-color);
