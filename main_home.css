@@ -2,6 +2,7 @@ main {
     width: 1028px;
     height: 2716px;
     margin: auto;
+    background-color: var(--back-color);
 }
 
 
@@ -143,7 +144,7 @@ main {
 @media (max-width: 768px) {
     main {
     max-width: 360px;
-    height: auto;
+    height: 2900px;
     margin: auto;
 }
 

@@ -16,9 +16,10 @@ img {
 
 :root {
     --main-color: white;
+    --back-color-dark: rgb(40, 44, 51, 1);
     --alt-color: rgba(171, 178, 191, 1);
     --sec-color: rgba(199, 120, 221, 1);
-    --back-color: rgba(40, 44, 51, 1);
+    --back-color: rgb(rgba(40, 44, 51, 1));
     --main-font: 'Fira Code', monospace;
 }
 
@@ -26,12 +27,13 @@ img {
 header {
     padding: 32px 0px 8px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1028px;
     height: 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    background: var(--back-color);
 }
 
 .hash {
@@ -98,7 +100,7 @@ header {
 }
 
 body {
-    background-color: var(--back-color)
+    background-color: var(--back-color-dark)
 }
 
 .language-btn {
